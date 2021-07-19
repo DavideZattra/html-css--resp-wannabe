@@ -73,12 +73,45 @@ img {
 }
 
 @media screen and (max-width: 420px) {
+  
+  /* COMMON */
+  
+  h1{
+    margin: 0;
+  }
+  
+  img {
+    height: 110px;
+    margin-top: 35px;
+  }
+
+  hr{
+    margin-top: 0;
+  }
+
+  .container{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  
   .row {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
   }
+  
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+    
+  .clear {
+    clear: both;
+  }
+  
   
   /* BLOCCO LEZIONI */
   #lezioni{
@@ -130,25 +163,9 @@ img {
   
   #why .row img {
     height: 50px;
-    width: 50px;
     background-color: #428bca;
     border-radius: 50%;
     padding: 30px
   }
   
-  /* COMMON */
-  .row::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-  
-  img {
-    height: 100px;
-    margin-top: 35px;
-  }
-  
-  .clear {
-    clear: both;
-  }
 }
